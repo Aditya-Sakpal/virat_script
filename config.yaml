@@ -1,0 +1,28 @@
+# Target account whose followers we analyze
+target: "viratkohli"
+
+# Directory where all scraped + analysis artifacts live.
+data_dir: "virat_data"
+
+# Comparison accounts (edit as needed for leaning / segment inference).
+comparisons: []
+
+# How many followers to fetch per account.
+max_followers_per_account: 250
+target_followers_override: 250
+
+# Mutuals strategy. "direct" = set intersection of follower lists.
+# "reverse" = per-follower fetch of following list (expensive).
+mutuals_mode: "direct"
+
+# Sleep between profile-info fetches (seconds).
+profile_fetch_delay: 2.5
+
+# Sleep between follower-page requests (seconds).
+follower_page_delay: 4.0
+
+# Whether to fetch detailed profile info (bio, post count, etc.) for each follower.
+fetch_profile_details: true
+
+# Bot-score threshold
+bot_score_threshold: 0.6
